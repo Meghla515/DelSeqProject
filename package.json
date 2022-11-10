@@ -1,0 +1,83 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": [
+    "react",
+    "typescript",
+    "webpack"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@mui/icons-material": "^5.0.3",
+    "@mui/material": "^5.0.1",
+    "@reduxjs/toolkit": "^1.5.1",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.3",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.31",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "@types/react-redux": "^7.1.16",
+    "axios": "^0.21.1",
+    "clingo-wasm": "0.0.9",
+    "clingojs": "^1.0.2",
+    "dotenv": "^10.0.0",
+    "firebase": "^9.5.0",
+    "highcharts": "^9.0.1",
+    "highcharts-react-official": "^3.0.0",
+    "material-table": "1.67.1",
+    "material-ui": "^0.20.2",
+    "md5": "^2.3.0",
+    "number-to-words": "^1.2.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.3",
+    "react-scripts": "4.0.3",
+    "reactfire": "^4.2.1",
+    "sass": "^1.42.1",
+    "tslib": "^2.3.1",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "webpack --config webpack.config.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "e2e": "cypress run",
+    "deploy": "webpack --config webpack.config.js && firebase deploy --only hosting"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/md5": "^2.3.0",
+    "@types/number-to-words": "^1.2.1",
+    "@types/webpack": "4.1.4",
+    "chromedriver": "^96.0.0",
+    "cypress": "^9.1.0",
+    "ts-loader": "^6.2.1",
+    "typesafe-actions": "^5.1.0",
+    "typescript": "^4.5.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
